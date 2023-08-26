@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `海家。網上落單系統`,
+    description: `網上落單，快捷方便`,
+    author: `Aquadeli Hong Kong Limited`,
+    siteUrl: `https://www.aquadeli.com.hk/`,
   },
   plugins: [
     `gatsby-plugin-image`,
