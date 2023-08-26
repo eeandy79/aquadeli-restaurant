@@ -36,6 +36,7 @@
 .listItemLink {
   color: var(--color-primary);
   font-weight: bold;
+  font-size: large;
 }
 
 .listItemDescription {
@@ -46,6 +47,15 @@
 
 .textCenter {
   text-align: center;
+}
+
+.listItemAddr {
+  margin-right: 5px;
+}
+
+.listItemTel {
+  margin-right: 6px;
+  margin-left: 1px;
 }
 
 .intro {

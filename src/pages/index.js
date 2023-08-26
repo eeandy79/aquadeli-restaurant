@@ -5,25 +5,26 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const links = [
   {
     text: "海家小品-西灣河店",
     url: "https://aquadeli-swh.povalab.com",
-    description:
-      "香港筲箕灣道128號地下"
+    addr: "香港筲箕灣道128號地下",
+    tel: "2967-9480",
   },
   {
     text: "海家小品-北角店",
     url: "https://aquadeli.povalab.com",
-    description:
-      "香港英皇道431號地下"
+    addr: "香港英皇道431號地下",
+    tel: "3702-1099",
   },
   {
     text: "海家酸菜魚-北角店",
     url: "https://aquafishpot.ecorder.net",
-    description:
-      "香港英皇道483-497號東寶大廈地下"
+    addr: "香港英皇道483-497號東寶大廈地下",
+    tel: "2117-3312",
   },
 ]
 
@@ -79,17 +80,7 @@ const IndexPage = () => (
       <h1>
         <b>海家。網上落單系統</b>
       </h1>
-      {/*<p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>*/}
+
     </div>
     <ul className={styles.list}>
       {links.map(link => (
@@ -100,7 +91,14 @@ const IndexPage = () => (
           >
             {link.text} ↗
           </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+          <p className={styles.listItemDescription}>
+            <FaMapMarkerAlt className={styles.listItemAddr} size="12"/>
+            {link.addr}
+          </p>
+          <p className={styles.listItemDescription}>
+            <FaPhoneAlt className={styles.listItemTel} size="11"/>
+            {link.tel}
+          </p>
         </li>
       ))}
     </ul>
