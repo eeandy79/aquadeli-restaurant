@@ -85,12 +85,13 @@ const IndexPage = () => (
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
+          <div className={styles.listItemLink}>
           <a
-            className={styles.listItemLink}
             href={`${link.url}`}
           >
             {link.text} ↗
           </a>
+          </div>
           <p className={styles.listItemDescription}>
             <FaMapMarkerAlt className={styles.listItemAddr} size="12"/>
             {link.addr}
