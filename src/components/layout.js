@@ -37,11 +37,12 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            textAlign: "center"
           }}
         >
-          © {new Date().getFullYear()} &middot; all right reserved
+          © {new Date().getFullYear()} &middot; All right reserved
           {` `}
-          <a href="https://www.aquadeli.com.hk">Aquadeli Hong Kong Limited</a>
+          <a href="https://www.aquadeli.com.hk">Aquadeli Limited</a>
         </footer>
       </div>
     </>
