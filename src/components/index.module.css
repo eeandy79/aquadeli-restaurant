@@ -3,7 +3,7 @@
   margin: 0;
   /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
   --w: 280px;
-  --n: 2;
+  --n: 1;
   gap: var(--size-gap);
   grid-template-columns: repeat(
     auto-fit,
