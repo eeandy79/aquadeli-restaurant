@@ -19,13 +19,7 @@ const links = [
     url: "https://aquadeli.povalab.com",
     addr: "香港英皇道431號地下",
     tel: "3702-1099",
-  },
-  {
-    text: "海家酸菜魚-北角店",
-    url: "https://aquafishpot.ecorder.net",
-    addr: "香港英皇道483-497號東寶大廈地下",
-    tel: "2117-3312",
-  },
+  }
 ]
 
 const samplePageLinks = [
